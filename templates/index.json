@@ -223,9 +223,10 @@
         "16644243327ba53d2a-1": {
           "type": "quote",
           "settings": {
+            "logo": "shopify://shop_images/grazia_300xlogo.png",
             "logo_width": 100,
             "author": "",
-            "content": "Or share content about your promotion, offers...",
+            "content": "une odeur vraiment unique qui ne laisse personne indifférent",
             "show_rating": false,
             "rating": 4
           }
