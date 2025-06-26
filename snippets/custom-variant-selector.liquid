@@ -29,10 +29,16 @@
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 10px;
-  width: 48%;
+  width: calc(50% - 8px);
+  box-sizing: border-box;
   text-align: center;
   position: relative;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .custom-variant-selector__block {
+    width: 100%;
+  }
 }
 .custom-variant-selector__block.selected {
   border-color: #000;
