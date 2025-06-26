@@ -9885,3 +9885,8 @@ split-lines {
   border-radius: 9999px !important; /* arrondi complet */
   font-weight: 600;
 }
+.shopify-payment-button__button--unbranded,
+.apple-pay-button {
+  min-height: 52px !important;
+  padding: 1.2em 2em !important;
+}
