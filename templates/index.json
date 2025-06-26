@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Banniere_femme_qui_se_mord_les_levres_1.webp",
             "content_max_width": 780,
             "mobile_text_position": "place-self-end-center text-center",
-            "desktop_text_position": "sm:place-self-end-center sm:text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
             "title": "UN REGARD, UN SOURIRE EN COIN, UN COMPLIMENT INATTENDU…",
             "heading_tag": "h3",
