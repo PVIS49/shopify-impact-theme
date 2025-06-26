@@ -66,6 +66,13 @@
             "payment_button_text_color": ""
           }
         },
+        "essential_trust_badges_app_block_BMU8NG": {
+          "type": "shopify://apps/essential-trust-badges/blocks/app-block/0ff65b25-07e1-408e-950f-f54dd3d1751b",
+          "settings": {
+            "banner_display": "all",
+            "banner_id": "8556ae8a-a5a9-477d-9d18-d797c9177215"
+          }
+        },
         "collapsible_text_kFXHF8": {
           "type": "collapsible_text",
           "settings": {
@@ -97,6 +104,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "essential_trust_badges_app_block_BMU8NG",
         "collapsible_text_kFXHF8",
         "collapsible_text_pQtbqi",
         "collapsible_text_wj9AkC"
