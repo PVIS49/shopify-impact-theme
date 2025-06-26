@@ -49,92 +49,6 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "image-link-blocks": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "1664424046b00c932c-0": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-1": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-2": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "1664424046b00c932c-3": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "1664424046b00c932c-0",
-        "1664424046b00c932c-1",
-        "1664424046b00c932c-2",
-        "1664424046b00c932c-3",
-        "e4a0ef18-1856-4ddd-83d8-871a60d7acac"
-      ],
-      "settings": {
-        "full_width": false,
-        "block_size": "medium",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "scrolling-text": {
       "type": "scrolling-text",
       "settings": {
@@ -148,99 +62,6 @@
         "background_gradient": "",
         "text_color": "",
         "text_gradient": ""
-      }
-    },
-    "collection-list": {
-      "type": "collection-list",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_collections": false,
-        "collections_per_row": 3,
-        "show_progress_bar": false,
-        "subheading": "",
-        "title": "Collection list",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Featured collection",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
       }
     },
     "impact-text": {
@@ -421,28 +242,6 @@
         "background_gradient": ""
       }
     },
-    "before-after-image": {
-      "type": "before-after-image",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Before/after",
-        "content": "<p>Showcase your product benefit by using before/after image comparison.</p>",
-        "expand_image": false,
-        "text_position": "center",
-        "before_after_text_position": "bottom",
-        "before_text": "Before",
-        "after_text": "After",
-        "drag_initial_position": 50,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "before_text_color": "#ffffff",
-        "after_text_color": "#ffffff",
-        "drag_cursor_background": "#ffffff",
-        "drag_cursor_color": "#000000"
-      }
-    },
     "press": {
       "type": "press",
       "blocks": {
@@ -552,34 +351,6 @@
     },
     "multiple-images-with-text": {
       "type": "multiple-images-with-text",
-      "blocks": {
-        "1664424486a2b084ab-0": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "1664424486a2b084ab-1": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "1664424486a2b084ab-0",
-        "1664424486a2b084ab-1"
-      ],
       "settings": {
         "full_width": true,
         "images_layout": "scattered",
@@ -591,239 +362,28 @@
         "button_text_color": ""
       }
     },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "badges": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
-        },
-        "variant-picker": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
-          }
-        },
-        "quantity-selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy-buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "vendor",
-        "title",
-        "badges",
-        "price",
-        "rating",
-        "separator",
-        "description",
-        "variant-picker",
-        "quantity-selector",
-        "buy-buttons"
-      ],
-      "settings": {
-        "full_width": false,
-        "product": "",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
-      }
-    },
-    "feature-chart": {
-      "type": "feature-chart",
-      "blocks": {
-        "16644246508f6fa13a-0": {
-          "type": "headings",
-          "settings": {
-            "heading_1": "Heading 1",
-            "heading_2": "Heading 2",
-            "heading_3": "Heading 3",
-            "heading_4": "Heading 4",
-            "heading_5": "",
-            "heading_6": "",
-            "heading_7": "",
-            "heading_8": "",
-            "heading_9": "",
-            "heading_10": "",
-            "heading_11": "",
-            "heading_12": "",
-            "heading_13": "",
-            "heading_14": "",
-            "heading_15": "",
-            "heading_16": "",
-            "heading_17": "",
-            "heading_18": "",
-            "heading_19": "",
-            "heading_20": ""
-          }
-        },
-        "16644246508f6fa13a-1": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>Yes</p>",
-            "value_2": "<p>Yes</p>",
-            "value_3": "<p>No</p>",
-            "value_4": "<p>No</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        },
-        "16644246508f6fa13a-2": {
-          "type": "values",
-          "settings": {
-            "product": "",
-            "value_1": "<p>No</p>",
-            "value_2": "<p>Yes</p>",
-            "value_3": "<p>Yes</p>",
-            "value_4": "<p>No</p>",
-            "value_5": "",
-            "value_6": "",
-            "value_7": "",
-            "value_8": "",
-            "value_9": "",
-            "value_10": "",
-            "value_11": "",
-            "value_12": "",
-            "value_13": "",
-            "value_14": "",
-            "value_15": "",
-            "value_16": "",
-            "value_17": "",
-            "value_18": "",
-            "value_19": "",
-            "value_20": "",
-            "view_button_background": "",
-            "view_button_text_color": ""
-          }
-        }
-      },
-      "block_order": [
-        "16644246508f6fa13a-0",
-        "16644246508f6fa13a-1",
-        "16644246508f6fa13a-2"
-      ],
-      "settings": {
-        "full_width": true,
-        "subheading": "Compare",
-        "title": "Product specification",
-        "content": "<p>Give your customers useful information about your products and showcase differences between them.</p>",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "max_rows": 5,
-        "view_all_text": "View all",
-        "view_less_text": "View less",
-        "view_product": "View",
-        "viewing_product": "",
-        "show_product_swatch": true,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "chart_background": "",
-        "chart_text_color": "",
-        "chart_true_false_color": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "title": "Quelles sont les notes olfactives de Parfum Vaillant ?",
+            "content": "<p>Vaillant associe la profondeur du bois de oud à la sensualité du musc, renforcée par des nuances de cuir et de vétiver. Ce mélange affirmé est complété par une alliance secrète d’essences soigneusement choisies pour créer une fragrance à la fois puissante, élégante et irrésistible.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "Le parfum tient-il toute la journée ?",
+            "content": "<p>Le parfum Vaillant est conçu pour durer. Sa concentration en eau de parfum, avec au moins 15 % d’essence pure, garantit une tenue longue durée, du matin jusqu’au soir.</p>"
           }
         },
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Est-ce que Vaillant aide vraiment à séduire ?",
+            "content": "<p>Oui, c’est précisément sa promesse. Chaque note a été pensée pour provoquer une réaction, créer de l’attirance et laisser une impression marquante. Ceux qui l’essayent en voient vite les effets.</p>"
           }
         }
       },
@@ -835,14 +395,14 @@
       "settings": {
         "full_width": false,
         "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "title": "Parfum Vaillant répond à vos questions",
+        "content": "",
         "team_avatar_width": 160,
         "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
         "answer_time": "Average answer time: 24h",
         "button_text": "",
         "button_url": "",
-        "text_position": "start",
+        "text_position": "center",
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "",
@@ -857,19 +417,13 @@
   },
   "order": [
     "slideshow",
-    "image-link-blocks",
     "scrolling-text",
-    "collection-list",
-    "featured-collection",
     "impact-text",
     "image-with-text-overlay",
     "media-grid",
-    "before-after-image",
     "press",
     "hot-spots",
     "multiple-images-with-text",
-    "featured-product",
-    "feature-chart",
     "faq"
   ]
 }
