@@ -17,13 +17,39 @@
         "free-shipping": {
           "type": "item",
           "settings": {
-            "icon": "picto-box",
+            "icon": "picto-truck",
             "mobile_icon_width": 24,
             "icon_width": 24,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
             "title": "Livraison rapide",
+            "content": ""
+          }
+        },
+        "item_E7FT67": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-return",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "#f0f0f0",
+            "icon_color": "",
+            "title": "Satisfait ou remboursé",
+            "content": ""
+          }
+        },
+        "payment": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "mobile_icon_width": 28,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Paiement sécurisé",
             "content": ""
           }
         },
@@ -39,25 +65,13 @@
             "title": "Service client 24h/24",
             "content": ""
           }
-        },
-        "payment": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-lock",
-            "mobile_icon_width": 24,
-            "icon_width": 24,
-            "icon_background_type": "none",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Paiement sécurisé",
-            "content": ""
-          }
         }
       },
       "block_order": [
         "free-shipping",
-        "customer-support",
-        "payment"
+        "item_E7FT67",
+        "payment",
+        "customer-support"
       ],
       "settings": {
         "full_width": true,
