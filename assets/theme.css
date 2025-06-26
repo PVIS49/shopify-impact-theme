@@ -9919,3 +9919,6 @@ split-lines {
   z-index: 9999 !important;
   position: relative; /* ou fixed/sticky selon ton système */
 }
+.variant-badge {
+  z-index: 1 !important;
+}
