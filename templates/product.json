@@ -121,19 +121,6 @@
         "input_text_color": ""
       }
     },
-    "custom_liquid_cArYRJ": {
-      "type": "custom-liquid",
-      "name": "Custom Liquid",
-      "settings": {
-        "full_width": true,
-        "remove_vertical_spacing": false,
-        "remove_horizontal_spacing": false,
-        "liquid": "<div id=\"shopify-section-template--21104642785607__section_content_q8Aq6q\" class=\"shopify-section\" bis_skin_checked=\"1\"> <section class=\"section bg-white padding-section\">\n      <div class=\"container page-width\" bis_skin_checked=\"1\">\n\n<div class=\"flex-content flex-img-content\" bis_skin_checked=\"1\">\n  <div class=\"flex-left-smaller\" bis_skin_checked=\"1\">\n    <div class=\"content-badge\" bis_skin_checked=\"1\">\n      <img loading=\"lazy\" src=\"//vaillantparfum.co/cdn/shop/files/Vaillant_-_Utilisateurs_2_1_300x.png?v=1712609843\" class=\"content-img-badge\">\n      <p class=\"_14px no-spacing xs-mobile\">+3 000 clients de Parfum Vaillant ont déjà séduit</p>\n    </div>\n    <h2 class=\"heading-2 darkblue bold\">Pouvoir attractif de Parfum Vaillant</h2>\n    <div class=\"content-selling-points\" bis_skin_checked=\"1\">\n      <div class=\"content-selling-point\" bis_skin_checked=\"1\">\n        \n      </div>\n      <div class=\"mid-line mid-line-content\" bis_skin_checked=\"1\"></div>\n          <div class=\"content-selling-point\" bis_skin_checked=\"1\">\n        \n      </div>\n      <div class=\"mid-line mid-line-content\" bis_skin_checked=\"1\"></div>\n          <div class=\"content-selling-point\" bis_skin_checked=\"1\">\n      </div>\n    </div>\n    <div class=\"_20px mobile-center mobile-14px darkblue\" bis_skin_checked=\"1\">Dès les premières notes, Vaillant déclenche une réaction instinctive.\nNotre parfum réveille l’attirance, attise le désir et capte l’attention de celles qui vous entourent.\nSa tenue longue durée laisse une trace claire : vous êtes là, et vous marquez les esprits.\nÀ ce niveau, ce n’est plus une question de hasard. C’est de l’impact.\n\n</div>\n\n    \n  </div>\n\n  <div class=\"flex-right\" bis_skin_checked=\"1\">\n    <img loading=\"lazy\" class=\"img-content-img\" src=\"//cdn.shopify.com/s/files/1/0908/5278/6562/files/Bouteille_parfum_Vaillant_dans_l_eau.webp?v=1747247946?v=1715644582\">\n   \n    </div>\n</div>\n      </div>\n </section>\n\n <style>\n\n   .flex-content {\n grid-column-gap: 20px;\n  grid-row-gap: 20px;\n  justify-content: space-between;\n  align-items: center;\n  display: flex;\n   }\n.content-badge {\n    border-radius: 40px;\n    display: flex;\n    align-items: center;\n    gap: 4px;\n    background: #1A1A1A;\n    color: white;\n    padding-left: 5px;\n    padding-right: 9px;\n}\n   .no-spacing {\n     margin-top: 0px;\n     margin-bottom: 0px;\n   }\n\n   img.content-img-badge {\n    width: 80px;\n}\n   img.img-content-img {\n    width: 100%;\n}\n\n   .flex-right {\n     position: relative;\n   }\n   .flex-left-smaller {\n     width: 41%;\n         align-items: flex-start;\n    display: flex;\n    flex-direction: column;\n    gap: 30px;\n        \n   }\n  .flex-img-content .flex-left {\n    width: 50%;\n}\n   .flex-img-content .flex-right {\n     width: 50%;\n   }\n\n   .content-selling-points {\n    display: flex;\n    justify-content: space-between;\n     gap: 10px;\n     width: 100%;\n}\n.content-selling-point {\n    width: -webkit-fill-available;\n}\n\n   @media screen and (max-width: 768px) {\n     .flex-content.flex-img-content {\n    flex-direction: column;\n}\n     .flex-left-smaller {\n    width: 100%;\n}\n     .flex-img-content .flex-right {\n    width: 80%;\n    margin-left: auto;\n    margin-right: auto;\n    margin-top: 50px;\n}\n     .flex-left-smaller {\n    justify-content: center;\n    align-items: center;\n\n   }\n     img.content-img-badge {\n    width: 65px;\n}\n\n\n\n     .flex-left-smaller br {\n       display: none;\n     }\n\n     .flex-content a.ig-btn {\n    width: 100%;\n}\n     .content-selling-point {\n    text-align: center;\n}\n\n   }\n   @media screen and (max-width: 500px) {\n   .content-selling-points {\n     gap: 7px;\n   }\n.xs-mobile {\n  font-size: 11px;\n}\n         .flex-img-content .flex-right {\n    width: 100%;\n    margin-left: auto;\n    margin-right: auto;\n    margin-top: 20px;\n}\n   .flex-left-smaller {\n    padding-top: 0px;\n   }\n\n.flex-right {\n    margin-top: 0px !important;\n  width: 100%;\n}\n     .flex-left-smaller {\n    gap: 25px;\n}\n      .flex-left-smaller h2 {\n        margin-top: 10px;\n      }\n     \n     .flex-left-smaller .ig-btn {\n       margin-top:15px;\n     }\n   }\n.heading-2.bold {\n  font-weight: 900 !important;\n}\n.darkblue {\n  color: #121212; /* ou un bleu très foncé de ton choix */\n}\n\n </style>\n\n\n</div>",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "1750933255fba7efc8": {
       "type": "apps",
       "blocks": {
@@ -233,7 +220,6 @@
   },
   "order": [
     "main",
-    "custom_liquid_cArYRJ",
     "1750933255fba7efc8",
     "impact_text_UrRT7p",
     "media_with_text_adMYBV"
