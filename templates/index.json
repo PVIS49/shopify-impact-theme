@@ -349,19 +349,6 @@
         "hot_spot_content_blur_radius": 3
       }
     },
-    "multiple-images-with-text": {
-      "type": "multiple-images-with-text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "scattered",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -445,6 +432,27 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "contact_CJjDM7": {
+      "type": "contact",
+      "name": "Contact form",
+      "settings": {
+        "full_width": true,
+        "subheading": "Vous avez une question ?",
+        "title": "Notre équipe d'experts en parfum est là pour vous",
+        "content": "",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -455,7 +463,7 @@
     "media-grid",
     "press",
     "hot-spots",
-    "multiple-images-with-text",
-    "faq"
+    "faq",
+    "contact_CJjDM7"
   ]
 }
