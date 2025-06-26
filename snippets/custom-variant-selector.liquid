@@ -50,25 +50,23 @@
   transition:all .2s ease;
 }
 .variant-card {
-  height: 180px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end; /* aligne le contenu vers le bas */
+  height: 180px; /* fixe une même hauteur pour toutes les cartes */
 }
 
-.img-small {
-  height: 70px;
+.variant-card img.img-small {
+  height: 60px;
   object-fit: contain;
-  margin-top: 12px;
+  align-self: center;
 }
 
-.img-large {
+.variant-card img.img-large {
   height: 100px;
   object-fit: contain;
-  margin-top: 12px;
+  align-self: center;
 }
-
-
 
 .custom-variant-selector__block.selected{
   border-color:#000;
