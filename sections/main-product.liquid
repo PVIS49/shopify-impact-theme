@@ -46,14 +46,6 @@
     {%- endif -%}
 
     {%- render 'product-info', product: product, update_url: true -%}
-
-{%- comment -%} Affiche le sélecteur custom juste au-dessus de la quantité {%- endcomment -%}
-{%- for block in section.blocks -%}
-  {%- if block.type == 'quantity_selector' -%}
-    {% render 'custom-variant-selector', product: product %}
-  {%- endif -%}
-{%- endfor -%}
-
     {%- comment %}
     Sélecteur visuel de variantes perso
   {%- endcomment %}
