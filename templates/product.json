@@ -354,12 +354,20 @@
             "title": "Parfum Vaillant est-il produit en France ?",
             "content": "<p>Tout à fait ! Parfum Vaillant est fabriqué en France, reconnu comme le pays de la parfumerie, pour garantir la qualité de chaque composition.</p>"
           }
+        },
+        "item_nWzBCY": {
+          "type": "item",
+          "settings": {
+            "title": "Quel est le délai de livraison de Parfum Vaillant ?",
+            "content": "<p>Les commandes sont expédiées depuis la France en 24h à 48h (hors week-end). La livraison prend généralement 4 à 7 jours ouvrés. Nos parfums sont pensés, développés et stockés en France pour vous offrir le meilleur service possible.<br/><br/></p>"
+          }
         }
       },
       "block_order": [
         "item_MHDXTm",
         "item_ReQDDE",
-        "item_484tFd"
+        "item_484tFd",
+        "item_nWzBCY"
       ],
       "name": "FAQ",
       "settings": {
