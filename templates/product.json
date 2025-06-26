@@ -66,6 +66,27 @@
             "payment_button_background": "#00a341",
             "payment_button_text_color": ""
           }
+        },
+        "collapsible_text_kFXHF8": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Notre parfum",
+            "content": "<p><strong>Tenue de 8 à 12 heures sans relâcheUne simple vaporisation de Vaillant suffit à éveiller les désirs les plus enfouis</strong>.<br/>Ce n’est pas un parfum comme les autres. C’est une empreinte sensorielle, un élixir de caractère qui laisse derrière lui un sillage envoûtant et durable.<br/>Impossible de l’oublier. Inutile de résister.<br/><br/></p>"
+          }
+        },
+        "collapsible_text_pQtbqi": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Ingrédients",
+            "content": "<p>Alcohol Denat., Eau (Water), Parfum (Fragrance), D-Limonene*<br/><br/>*D-Limonene : dérivé naturellement des agrumes, il remplace les solvants synthétiques pour garantir l’harmonie et la stabilité de la composition exclusive de Vaillant.</p><p>Vaillant est un parfum audacieux, où le bois de Oud et le musc s’unissent à des accents cuirés et au caractère affirmé du vétiver. Un sillage puissant, qui ne passe jamais inaperçu.</p><p>Sans BPA ni perturbateurs endocriniens, sa formule a été pensée pour respecter votre peau… et votre équilibre.</p>"
+          }
+        },
+        "collapsible_text_wj9AkC": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Conseils d’application",
+            "content": "<p>Vaporisez sur les zones de pulsation : poignets, cou, derrière les oreilles.<br/>Renouvelez l’application si nécessaire pour prolonger l’intensité du sillage.</p><p><strong>PRÉCAUTIONS D’EMPLOI</strong><br/>Usage externe uniquement.<br/>Ne pas ingérer.<br/>Éviter tout contact avec les yeux. En cas de projection, rincer abondamment à l’eau claire.<br/>Conserver hors de portée des enfants.</p>"
+          }
         }
       },
       "block_order": [
@@ -77,7 +98,10 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "collapsible_text_kFXHF8",
+        "collapsible_text_pQtbqi",
+        "collapsible_text_wj9AkC"
       ],
       "settings": {
         "full_width": true,
