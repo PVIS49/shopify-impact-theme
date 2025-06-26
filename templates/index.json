@@ -212,7 +212,8 @@
         "16644243327ba53d2a-0": {
           "type": "quote",
           "settings": {
-            "logo_width": 100,
+            "logo": "shopify://shop_images/elle_300xlogo.png",
+            "logo_width": 150,
             "author": "",
             "content": "LE parfum du moment, nous recevons des dizaines et des dizaines de messages à propos de ce parfum \"",
             "show_rating": false,
