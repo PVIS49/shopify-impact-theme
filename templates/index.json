@@ -124,7 +124,7 @@
             "size": "lg",
             "text": "Découvrir notre fragrance",
             "url": "shopify://products/parfum-vaillant",
-            "background": "",
+            "background": "#1a1a1a",
             "text_color": ""
           }
         }
