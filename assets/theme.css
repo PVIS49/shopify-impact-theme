@@ -9890,11 +9890,28 @@ split-lines {
   display: block;
   transition: all 0.3s ease;
 }
-
-.shopify-payment-button__button:hover {
-  opacity: 0.9;
+/* Cible le bouton Shopify dynamique non brandé */
+.custom-dynamic-checkout .shopify-payment-button__button {
+  width: 100% !important;
+  padding: 16px 24px !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
+  box-shadow: none !important;
+  min-height: auto !important;
 }
 
-.shopify-payment-button__button--hidden {
+/* Désactive la version brandée Apple Pay */
+.shopify-payment-button__button--branded {
   display: none !important;
+}
+
+/* Affiche la version non brandée si possible */
+.shopify-payment-button__button--unbranded {
+  display: block !important;
 }
