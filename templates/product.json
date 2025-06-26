@@ -330,6 +330,59 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "faq_LJkekG": {
+      "type": "faq",
+      "blocks": {
+        "item_MHDXTm": {
+          "type": "item",
+          "settings": {
+            "title": "Quelles notes olfactives possède Parfum Vaillant ?",
+            "content": "<p>Vaillant combine des notes de bois de oud, de musc, de cuir et de vétiver. Ce mélange crée une signature olfactive puissante, masculine et élégante. Le tout est renforcé par une alliance secrète d’essences qui donne au parfum sa touche unique et irrésistible.</p>"
+          }
+        },
+        "item_ReQDDE": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce que Parfum Vaillant tient toute la journée ?",
+            "content": "<p>Oui. Parfum Vaillant est une eau de parfum qui assure une tenue longue durée. Une application suffit pour vous accompagner du matin jusqu’au soir.</p>"
+          }
+        },
+        "item_484tFd": {
+          "type": "item",
+          "settings": {
+            "title": "Any question?",
+            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_MHDXTm",
+        "item_ReQDDE",
+        "item_484tFd"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Les questions fréquentes sur Parfum Vaillant",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -339,6 +392,7 @@
     "custom_liquid_pKbny3",
     "rich_text_rVXQph",
     "images_with_text_scrolling_cAMciG",
-    "1750933255fba7efc8"
+    "1750933255fba7efc8",
+    "faq_LJkekG"
   ]
 }
