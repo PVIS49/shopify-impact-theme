@@ -9942,3 +9942,9 @@ split-lines {
   background-color: #000000 !important;
   color: #ffffff !important;
 }
+.shopify-payment-button {
+  min-height: 60px !important;
+}
+#MainProduct .shopify-payment-button {
+  min-height: 60px !important;
+}
