@@ -9905,6 +9905,16 @@ split-lines {
   box-shadow: none !important;
   min-height: auto !important;
 }
+
+/* Désactive la version brandée Apple Pay */
+.shopify-payment-button__button--branded {
+  display: none !important;
+}
+
+/* Affiche la version non brandée si possible */
+.shopify-payment-button__button--unbranded {
+  display: block !important;
+}
 .apple-pay-button {
   min-height: 52px !important;
   height: 52px !important;
