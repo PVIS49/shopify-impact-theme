@@ -184,7 +184,7 @@
             "image": "shopify://shop_images/Bouteille_parfum_Vaillant_dans_l_eau.webp",
             "media_width": 50,
             "media_position": "end",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-start-center text-center",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
