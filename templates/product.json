@@ -174,12 +174,47 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "media_with_text_adMYBV": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_3K4ARX": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Pouvoir attractif de Parfum Vaillant",
+            "content": "<p>Dès les premières notes, Vaillant déclenche une réaction instinctive. Notre parfum réveille l’attirance, attise le désir et capte l’attention de celles qui vous entourent. Sa tenue longue durée laisse une trace claire : vous êtes là, et vous marquez les esprits. À ce niveau, ce n’est plus une question de hasard. C’est de l’impact.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f0f0f0",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3K4ARX"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
     }
   },
   "order": [
     "main",
     "custom_liquid_cArYRJ",
     "1750932610a8d7657d",
-    "1750933255fba7efc8"
+    "1750933255fba7efc8",
+    "media_with_text_adMYBV"
   ]
 }
