@@ -9879,14 +9879,22 @@ split-lines {
   overflow: hidden;
 }
 .shopify-payment-button__button {
-  padding-top: 1.2em !important;
-  padding-bottom: 1.2em !important;
+  width: 100% !important;
+  padding: 16px 24px !important;
   font-size: 16px !important;
-  border-radius: 9999px !important; /* arrondi complet */
-  font-weight: 600;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  background-color: #000 !important;
+  color: #fff !important;
+  text-align: center;
+  display: block;
+  transition: all 0.3s ease;
 }
-.shopify-payment-button__button--unbranded,
-.apple-pay-button {
-  min-height: 52px !important;
-  padding: 1.2em 2em !important;
+
+.shopify-payment-button__button:hover {
+  opacity: 0.9;
+}
+
+.shopify-payment-button__button--hidden {
+  display: none !important;
 }
