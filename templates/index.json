@@ -206,6 +206,40 @@
         "spacing": "small"
       }
     },
+    "image_with_text_overlay_xeAiep": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_zCk4jC": {
+          "type": "heading",
+          "settings": {
+            "text": "ÉVEILLEZ VOTRE INSTINCT",
+            "heading_tag": "h3"
+          }
+        },
+        "richtext_yGqBzn": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Vaillant connaît les goûts et points faibles de votre cible… Vaillant sait exactement où frapper.<strong>Car au fond, qui peut résister à l’appel de ses pulsions les plus profondes ?</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zCk4jC",
+        "richtext_yGqBzn"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "press": {
       "type": "press",
       "blocks": {
@@ -224,7 +258,7 @@
           "type": "quote",
           "settings": {
             "logo": "shopify://shop_images/grazia_300xlogo.png",
-            "logo_width": 100,
+            "logo_width": 170,
             "author": "",
             "content": "une odeur vraiment unique qui ne laisse personne indifférent",
             "show_rating": false,
@@ -361,6 +395,7 @@
     "media_with_text_BQE8yY",
     "image_with_text_overlay_PrHEgD",
     "media_with_text_4fdh3P",
+    "image_with_text_overlay_xeAiep",
     "press",
     "faq",
     "contact_CJjDM7"
