@@ -9,7 +9,7 @@
         {% if forloop.index == 1 or forloop.index == 2 %}
           <div class="variant-badge">Économisez 50€</div>
         {% endif %}
-        <img src="{{ variant.featured_image | img_url: '300x' }}" alt="{{ variant.title }}">
+        <img src="{{ variant.featured_media.preview_image | image_url: width: 300 }}" alt="{{ variant.title }}">
         <p class="variant-label">{{ variant.title }}</p>
         <p class="variant-price">{{ variant.price | money }}</p>
       </div>
