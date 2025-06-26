@@ -101,50 +101,108 @@
         "button_text_color": ""
       }
     },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
+    "media_with_text_BQE8yY": {
+      "type": "media-with-text",
       "blocks": {
-        "heading_jtM4k9": {
-          "type": "heading",
+        "image_dGqUJx": {
+          "type": "image",
           "settings": {
-            "text": "UN PARFUM PAS COMME LES AUTRES",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_mt77fb": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Une alliance audacieuse de musc, d’ambre et de cuir, relevée par une touche mystérieuse issue de notre formule exclusive. C'est tout ce dont notre fragrance à besoin pour marquer les esprits autour de vous.</p>"
-          }
-        },
-        "button_a4PH8Q": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "lg",
-            "text": "Découvrir notre fragrance",
-            "url": "shopify://products/parfum-vaillant",
+            "image": "shopify://shop_images/Bouteille_de_parum_Vaillant_avec_boite.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "UN PARFUM PAS COMME LES AUTRES",
+            "content": "<p>Une alliance audacieuse de musc, d’ambre et de cuir, relevée par une touche mystérieuse issue de notre formule exclusive. C'est tout ce dont notre fragrance à besoin pour marquer les esprits autour de vous.</p>",
+            "link_text": "Découvrir notre fragrance",
+            "link_url": "",
             "background": "#1a1a1a",
-            "text_color": ""
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#ffffff",
+            "button_text_color": "#1a1a1a"
           }
         }
       },
       "block_order": [
-        "heading_jtM4k9",
-        "richtext_mt77fb",
-        "button_a4PH8Q"
+        "image_dGqUJx"
       ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "image_with_text_overlay_PrHEgD": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_VEFEEh": {
+          "type": "subheading",
+          "settings": {
+            "text": "DÉCOUVREZ L'EXPÉRIENCE DE PARFUM VAILLANT"
+          }
+        },
+        "richtext_cx7nTk": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Le Parfum Vaillant ne se contente pas de parfumer, il imprime sa présence. Un accord rare et envoûtant, avec des essences précieuses et des notes chaudes qui vous accompagnent jusqu’au moment décisif.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_VEFEEh",
+        "richtext_cx7nTk"
+      ],
+      "name": "Image with text overlay",
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/Bouteille_de_parum_Vaillant_avec_boite.webp",
+        "image": "shopify://shop_images/Bannieer_femme_regard.webp",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
-        "overlay_color": "#000000",
+        "overlay_color": "rgba(0,0,0,0)",
         "overlay_opacity": 30
+      }
+    },
+    "media_with_text_4fdh3P": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_NXN4Tq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Bouteille_de_parum_Vaillant.webp",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "LIBÉREZ VOTRE POUVOIR DE SÉDUCTION",
+            "content": "<p>Notre parfum Vaillant est une alchimie rare, un élixir de caractère façonné à partir de notes exclusives.<br/>Il laisse derrière vous un sentiment profond, marquant, inoubliable.</p><p>Ceux qui croisent votre route s’en souviendront.</p>",
+            "link_text": "Commander Parfum Vaillant",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#ffffff",
+            "button_text_color": "#1a1a1a"
+          }
+        }
+      },
+      "block_order": [
+        "image_NXN4Tq"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
       }
     },
     "press": {
@@ -297,7 +355,9 @@
     "slideshow",
     "scrolling-text",
     "impact-text",
-    "image-with-text-overlay",
+    "media_with_text_BQE8yY",
+    "image_with_text_overlay_PrHEgD",
+    "media_with_text_4fdh3P",
     "press",
     "faq",
     "contact_CJjDM7"
