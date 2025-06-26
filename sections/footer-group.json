@@ -93,8 +93,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "title": "Notre volonté",
+            "content": "<p>Parfum Vaillant crée des fragrances puissantes, audacieuses et irrésistibles conçues pour marquer les esprits dès la première rencontre.</p>",
             "enable_follow_on_shop": true
           }
         }
