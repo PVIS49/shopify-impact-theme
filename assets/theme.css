@@ -9915,3 +9915,7 @@ split-lines {
 .shopify-payment-button__button--unbranded {
   display: block !important;
 }
+.cookie-banner {
+  z-index: 9999 !important;
+  position: relative; /* ou fixed/sticky selon ton système */
+}
