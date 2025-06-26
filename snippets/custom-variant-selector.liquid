@@ -6,137 +6,81 @@
       <span class="variant-indicator"></span>
       <input type="radio" name="custom_variant_id" class="hidden-radio" value="{{ variant.id }}" {% if forloop.first %}checked{% endif %}>
       <div class="variant-card">
-        {% if forloop.index <= 2 %}
-          <div class="variant-badge">Soldes été -20%</div>
+        {% if forloop.index == 1 or forloop.index == 2 %}
+          <div class="variant-badge">Économisez 50€</div>
         {% endif %}
-
-        {% if variant.metafields.custom.custom_image != blank %}
-          <img src="{{ variant.metafields.custom.custom_image | image_url: width: 300 }}" alt="{{ variant.title }}">
-        {% elsif variant.featured_image %}
-          <img src="{{ variant.featured_image | image_url: width: 300 }}" alt="{{ variant.title }}">
-        {% else %}
-          <img src="{{ 'placeholder.jpg' | asset_url }}" alt="Image indisponible">
-        {% endif %}
-
-        <div class="variant-title">{{ variant.title }}</div>
-        <div class="variant-price">
-          {% if variant.compare_at_price > variant.price %}
-            <span class="old-price">{{ variant.compare_at_price | money }}</span>
-            <span class="new-price">{{ variant.price | money }}</span>
-          {% else %}
-            <span class="new-price">{{ variant.price | money }}</span>
-          {% endif %}
-        </div>
+        <img src="{{ variant.featured_image | img_url: '300x' }}" alt="{{ variant.title }}">
+        <p class="variant-label">{{ variant.title }}</p>
+        <p class="variant-price">{{ variant.price | money }}</p>
       </div>
     </label>
   {% endfor %}
 </div>
 
 <style>
-  .custom-variant-selector {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-  }
-  .custom-variant-selector__block {
-    flex: 1;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-  }
-  .variant-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    height: 100%;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
-  }
-  .custom-variant-selector__block.selected .variant-card,
-  .custom-variant-selector__block input[type="radio"]:checked + .variant-card {
-    border-color: black;
-    background-color: #f7f7f7;
-  }
-  .variant-card img {
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 6px;
-  }
-  .variant-title {
-    font-weight: bold;
-    font-size: 15px;
-  }
-  .variant-price {
-    font-size: 16px;
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    justify-content: center;
-  }
-  .old-price {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 0.9em;
-  }
-  .new-price {
-    font-weight: bold;
-    font-size: 1em;
-  }
-  .variant-badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #171F2E;
-    color: white;
-    padding: 4px 12px;
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 999px;
-    line-height: 1.4;
-    white-space: nowrap;
-    z-index: 2;
-  }
-  .variant-indicator {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    width: 14px;
-    height: 14px;
-    border: 2px solid black;
-    border-radius: 50%;
-    background-color: transparent;
-    z-index: 10;
-  }
-  .custom-variant-selector__block.selected .variant-indicator {
-    background-color: black;
-  }
-  .hidden-radio {
-    display: none;
-  }
+.custom-variant-selector {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.custom-variant-selector__block {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 48%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.custom-variant-selector__block.selected {
+  border-color: #000;
+  background-color: #f6f6f6;
+}
+.variant-card img {
+  max-width: 100%;
+  margin-top: 20px;
+}
+.variant-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: #d32f2f;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+.variant-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.custom-variant-selector__block.selected .variant-indicator {
+  background: #000;
+}
 </style>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const radios = document.querySelectorAll(".custom-variant-selector__block input[type='radio']");
-    const productForm = document.querySelector('form[action^="/cart/add"]');
+    const selectorBlocks = document.querySelectorAll(".custom-variant-selector__block");
+    const hiddenInput = document.querySelector('form[action^="/cart/add"] input[name="id"]');
 
-    radios.forEach((radio) => {
-      radio.addEventListener("change", (e) => {
-        const selectedId = e.target.value;
-        const hiddenInput = productForm.querySelector('input[name="id"]');
-        if (hiddenInput) {
-          hiddenInput.value = selectedId;
-        }
+    selectorBlocks.forEach(block => {
+      block.addEventListener("click", function () {
+        selectorBlocks.forEach(b => b.classList.remove("selected"));
+        this.classList.add("selected");
 
-        document.querySelectorAll(".custom-variant-selector__block").forEach((el) =>
-          el.classList.remove("selected")
-        );
-        e.target.closest(".custom-variant-selector__block").classList.add("selected");
+        const variantId = this.getAttribute("data-variant-id");
+        const radio = this.querySelector("input[type='radio']");
+        if (radio) radio.checked = true;
+        if (hiddenInput) hiddenInput.value = variantId;
       });
     });
   });
