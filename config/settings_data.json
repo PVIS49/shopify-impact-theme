@@ -16,6 +16,8 @@
     "block_border_radius": 24,
     "block_shadow_opacity": 10,
     "block_shadow_vertical_offset": 18,
+    "icon_stroke_width": 2,
+    "icon_style": "duo",
     "button_style": "fill",
     "background": "#f0f0f0",
     "text_color": "#1a1a1a",
@@ -142,5 +144,11 @@
       "product_color_display": "swatch",
       "product_info_alignment": "center"
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "/* Hauteur + style unifié pour Apple Pay & autres wallets */shopify-accelerated-checkout,shopify-accelerated-checkout-cart {--shopify-accelerated-checkout-button-block-size: 60px; /* même épaisseur que “Ajouter au panier” */ --shopify-accelerated-checkout-button-border-radius: var(--rounded-button); --shopify-accelerated-checkout-button-box-shadow: none;}",
+      "/* Optionnel : taille un peu plus faible dans le tiroir Quick-Buy */@media (max-width: 700px) {.quick-buy-drawer shopify-accelerated-checkout, .quick-buy-drawer shopify-accelerated-checkout-cart {--shopify-accelerated-checkout-button-block-size: 46px; }}"
+    ]
   }
 }
