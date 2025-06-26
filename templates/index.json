@@ -133,7 +133,7 @@
       "name": "Media with text",
       "settings": {
         "full_width": false,
-        "spacing": "small"
+        "spacing": "none"
       }
     },
     "image_with_text_overlay_PrHEgD": {
@@ -188,7 +188,7 @@
             "content": "<p>Notre parfum Vaillant est une alchimie rare, un élixir de caractère façonné à partir de notes exclusives.<br/>Il laisse derrière vous un sentiment profond, marquant, inoubliable.</p><p>Ceux qui croisent votre route s’en souviendront.</p>",
             "link_text": "Commander Parfum Vaillant",
             "link_url": "shopify://products/parfum-vaillant",
-            "background": "#000000",
+            "background": "#1a1a1a",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
@@ -203,7 +203,7 @@
       "name": "Media with text",
       "settings": {
         "full_width": false,
-        "spacing": "small"
+        "spacing": "none"
       }
     },
     "image_with_text_overlay_xeAiep": {
