@@ -361,13 +361,29 @@
             "title": "Quel est le délai de livraison de Parfum Vaillant ?",
             "content": "<p>Les commandes sont expédiées depuis la France en 24h à 48h (hors week-end). La livraison prend généralement 4 à 7 jours ouvrés. Nos parfums sont pensés, développés et stockés en France pour vous offrir le meilleur service possible.<br/><br/></p>"
           }
+        },
+        "item_p8KxJw": {
+          "type": "item",
+          "settings": {
+            "title": "Quelle contenance de Parfum Vaillant devrais-je choisir ?",
+            "content": "<p>Le flacon de 50 ml est idéal pour un usage quotidien pendant environ 5 à 6 mois. Le format 100 ml, quant à lui, vous offre une autonomie d’environ un an. À vous de choisir selon votre fréquence d’utilisation et vos habitudes.<br/><br/></p>"
+          }
+        },
+        "item_ejtmGQ": {
+          "type": "item",
+          "settings": {
+            "title": "Puis-je demander un remboursement ?",
+            "content": "<p>Oui. Vous disposez de 14 jours à compter de la réception de votre commande pour demander un retour ou un remboursement, conformément à notre politique de retours.</p>"
+          }
         }
       },
       "block_order": [
         "item_MHDXTm",
         "item_ReQDDE",
         "item_484tFd",
-        "item_nWzBCY"
+        "item_nWzBCY",
+        "item_p8KxJw",
+        "item_ejtmGQ"
       ],
       "name": "FAQ",
       "settings": {
