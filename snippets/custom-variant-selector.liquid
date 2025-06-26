@@ -83,12 +83,16 @@
   top: 6px;
   left: 50%;
   transform: translateX(-50%);
-  background: #d32f2f; /* ou ta couleur personnalisée */
+  background: #d32f2f;
   color: white;
   padding: 4px 10px;
   font-size: 12px;
   border-radius: 6px;
-  line-height: 1;
+  white-space: nowrap;       /* empêche le retour à la ligne */
+  overflow: hidden;          /* masque le débordement */
+  text-overflow: ellipsis;   /* ajoute "..." si trop long */
+  max-width: 90%;            /* limite la largeur */
+  z-index: 2;
 }
 
 .variant-indicator{
