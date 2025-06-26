@@ -9916,8 +9916,8 @@ split-lines {
   display: block !important;
 }
 .apple-pay-button {
-  min-height: 100px !important;
-  height: 100px !important;
+  min-height: 52px !important;
+  height: 52px !important;
   display: block !important;
   margin: 12px 0 !important;
 }
