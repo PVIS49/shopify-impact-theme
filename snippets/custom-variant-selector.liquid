@@ -20,34 +20,41 @@
 <style>
 .custom-variant-selector {
   display: flex;
-  gap: 16px;
-  margin-top: 20px;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: 20px;
 }
+
 .custom-variant-selector__block {
+  flex: 1 1 calc(50% - 12px); /* 2 blocs par ligne */
+  max-width: calc(50% - 12px);
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 10px;
-  width: calc(50% - 8px);
-  box-sizing: border-box;
   text-align: center;
   position: relative;
   cursor: pointer;
+  box-sizing: border-box;
 }
-  @media screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
   .custom-variant-selector__block {
-    width: 100%;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
+
 .custom-variant-selector__block.selected {
   border-color: #000;
   background-color: #f6f6f6;
 }
+
 .variant-card img {
   max-width: 100%;
   margin-top: 20px;
 }
+
 .variant-badge {
   position: absolute;
   top: 6px;
@@ -58,6 +65,7 @@
   font-size: 12px;
   border-radius: 6px;
 }
+
 .variant-indicator {
   width: 10px;
   height: 10px;
@@ -68,9 +76,11 @@
   top: 10px;
   right: 10px;
 }
+
 .custom-variant-selector__block.selected .variant-indicator {
   background: #000;
 }
+
 </style>
 
 <script>
