@@ -46,7 +46,19 @@
     "cart_show_free_shipping_threshold": false,
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
-    "content_for_index": []
+    "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "13070091535480640111": {
+        "type": "shopify://apps/attrac/blocks/app-embed/b783956d-47a9-4434-91ad-4ec960bd74b0",
+        "disabled": false,
+        "settings": {}
+      }
+    }
   },
   "presets": {
     "Sound": {
@@ -149,7 +161,7 @@
   "platform_customizations": {
     "custom_css": [
       "/* Hauteur + style unifié pour Apple Pay & autres wallets */shopify-accelerated-checkout,shopify-accelerated-checkout-cart {--shopify-accelerated-checkout-button-block-size: 60px; /* même épaisseur que “Ajouter au panier” */ --shopify-accelerated-checkout-button-border-radius: var(--rounded-button); --shopify-accelerated-checkout-button-box-shadow: none;}",
-      "/* Optionnel : taille un peu plus faible dans le tiroir Quick-Buy */@media (max-width: 700px) {.quick-buy-drawer shopify-accelerated-checkout, .quick-buy-drawer shopify-accelerated-checkout-cart {--shopify-accelerated-checkout-button-block-size: 46px; }}"
+      " /* Optionnel : taille un peu plus faible dans le tiroir Quick-Buy */@media (max-width: 700px) {.quick-buy-drawer shopify-accelerated-checkout, .quick-buy-drawer shopify-accelerated-checkout-cart {--shopify-accelerated-checkout-button-block-size: 46px; }}"
     ]
   }
 }
