@@ -9915,9 +9915,12 @@ split-lines {
 .shopify-payment-button__button--unbranded {
   display: block !important;
 }
-.apple-pay-button {
-  min-height: 52px !important;
-  height: 52px !important;
-  display: block !important;
-  margin: 12px 0 !important;
+.shopify-payment-button__button {
+  padding: 1.1em 2em;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 9999px;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
 }
