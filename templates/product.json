@@ -291,6 +291,19 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "custom_liquid_pKbny3": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<section id=\"shopify-section-template--24795448967554__section_resultats_clients_FXCAaT\" class=\"shopify-section\"><style>\n  .wrapper-fond {\n    width: 100%;\n    padding: 2rem 1.5rem;\n    box-sizing: border-box;\n  }\n\n  .box-resultats {\n    background-color: #ffffff;\n    border-radius: 12px;\n    box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);\n    padding: 2rem;\n    max-width: 500px;\n    margin: 0 auto;\n  }\n\n  .resultats-barre {\n    margin-bottom: 1.5rem;\n  }\n\n  .resultats-barre .contenu-ligne {\n    display: flex;\n    align-items: center;\n    justify-content: flex-start;\n    flex-wrap: nowrap;\n    gap: 0.4rem;\n    margin-bottom: 0.4rem;\n  }\n\n  .resultats-barre .pourcentage {\n    font-weight: bold;\n    white-space: nowrap;\n  }\n\n  .resultats-barre .texte {\n    flex: 1;\n    min-width: 0;\n    word-break: break-word;\n  }\n\n  .barre-container {\n    background-color: #e5e5e5;\n    border-radius: 100px;\n    height: 10px;\n    overflow: hidden;\n  }\n\n  .barre-remplie {\n    height: 100%;\n    border-radius: 100px;\n    transition: width 0.6s ease;\n  }\n\n  .texte-infobulle {\n    font-size: 0.85rem;\n    color: #666;\n    margin-top: 1rem;\n    text-align: left;\n  }\n\n  @media screen and (max-width: 600px) {\n    .resultats-barre .contenu-ligne {\n      flex-wrap: wrap;\n    }\n  }\n</style>\n\n<div class=\"wrapper-fond\" style=\"background-color: #ffffff;\">\n  <div class=\"box-resultats\" style=\"background-color: #ffffff;\">\n    <div class=\"resultats-clients\">\n      <h2 style=\"color: #1c2433;\n               font-size: 25px;\n               text-align: center;\n               font-weight: bold;\">\n        Résultats obtenus par nos clients\n      </h2>\n\n      \n        \n          <div class=\"resultats-barre\">\n            <div class=\"contenu-ligne\">\n              <div class=\"pourcentage\" style=\"color: #1c2433;\n                       font-size: 20px;\">\n                96%\n              </div>\n              <div class=\"texte\" style=\"color: #333333;\n                       font-size: 15px;\">\n                reçoivent des compliments sur leur parfums quotidiennement\n              </div>\n            </div>\n            <div class=\"barre-container\">\n              <div class=\"barre-remplie\" style=\"width: 96%;\n                       background-color: #1c2433;\">\n              </div>\n            </div>\n          </div>\n        \n      \n        \n          <div class=\"resultats-barre\">\n            <div class=\"contenu-ligne\">\n              <div class=\"pourcentage\" style=\"color: #1c2433;\n                       font-size: 20px;\">\n                78%\n              </div>\n              <div class=\"texte\" style=\"color: #333333;\n                       font-size: 15px;\">\n                ont conclu un date en portant le parfum\n              </div>\n            </div>\n            <div class=\"barre-container\">\n              <div class=\"barre-remplie\" style=\"width: 78%;\n                       background-color: #1c2433;\">\n              </div>\n            </div>\n          </div>\n        \n      \n        \n          <div class=\"resultats-barre\">\n            <div class=\"contenu-ligne\">\n              <div class=\"pourcentage\" style=\"color: #111111;\n                       font-size: 20px;\">\n                71%\n              </div>\n              <div class=\"texte\" style=\"color: #333333;\n                       font-size: 15px;\">\n                ressentent une différence auprès des femmes\n              </div>\n            </div>\n            <div class=\"barre-container\">\n              <div class=\"barre-remplie\" style=\"width: 71%;\n                       background-color: #1c2433;\">\n              </div>\n            </div>\n          </div>\n        \n      \n\n      <div class=\"texte-infobulle\">\n        *D'après une étude menée auprès de 230 clients en 2025\n      </div>\n    </div>\n  </div>\n</div>\n\n\n</section>",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -298,6 +311,7 @@
     "1750933255fba7efc8",
     "impact_text_UrRT7p",
     "media_with_text_adMYBV",
-    "images_with_text_scrolling_cAMciG"
+    "images_with_text_scrolling_cAMciG",
+    "custom_liquid_pKbny3"
   ]
 }
