@@ -10,10 +10,17 @@
           <div class="variant-badge">Économisez 50€</div>
         {% endif %}
     {% if variant.metafields.custom.custom_image %}
-  <img src="{{ variant.metafields.custom.custom_image | image_url: width: 300 }}" alt="{{ variant.title }}">
+  <img
+    src="{{ variant.metafields.custom.custom_image | image_url: width: 300 }}"
+    alt="{{ variant.title }}"
+    class="{% if forloop.index == 1 %}img-small{% else %}img-large{% endif %}">
 {% elsif variant.featured_media %}
-  <img src="{{ variant.featured_media.preview_image | image_url: width: 300 }}" alt="{{ variant.title }}">
+  <img
+    src="{{ variant.featured_media.preview_image | image_url: width: 300 }}"
+    alt="{{ variant.title }}"
+    class="{% if forloop.index == 1 %}img-small{% else %}img-large{% endif %}">
 {% endif %}
+
 
         <p class="variant-label">{{ variant.title }}</p>
         <p class="variant-price">{{ variant.price | money }}</p>
