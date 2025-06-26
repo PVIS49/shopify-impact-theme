@@ -24,7 +24,6 @@ Supported variables
 
 {%- form 'product', product, is: 'product-form', id: form_id -%}
   <input type="hidden" {% if variant_picker_block != blank %}disabled{% endif %} name="id" value="{{ product.selected_or_first_available_variant.id }}">
-  {% render 'custom-variant-selector', product: product %}
 
   {%- assign button_disabled = false -%}
   {%- assign button_size = button_size | default: 'xl' -%}
