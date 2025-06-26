@@ -300,7 +300,7 @@
       ],
       "name": "Images and text scrolling",
       "settings": {
-        "full_width": true,
+        "full_width": false,
         "stack_on_mobile": false,
         "show_counter": false,
         "desktop_image_effect": "reveal",
