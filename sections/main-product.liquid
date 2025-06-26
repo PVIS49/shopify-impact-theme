@@ -58,8 +58,6 @@
   {%- capture product_form_id -%}product-form-{{ product.id }}-{{ section.id }}{%- endcapture -%}
 
   <product-quick-add form="{{ product_form_id }}" class="product-quick-add">
-    {% render 'custom-variant-selector', product: product %}
-
     {%- assign button_label = 'product.general.add_to_cart_button' | t -%}
 
     <buy-buttons template="{{ product.template_suffix }}" form="{{ product_form_id }}" force-secondary-button class="sm:hidden">
