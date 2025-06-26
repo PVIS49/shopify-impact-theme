@@ -23,26 +23,27 @@
 .custom-variant-selector {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
-  justify-content: space-between;
   margin-top: 20px;
 }
 
 .custom-variant-selector__block {
-  flex: 1 1 calc(50% - 12px); /* 2 blocs par ligne */
-  max-width: calc(50% - 12px);
+  flex: 0 0 48%;
+  max-width: 48%;
+  box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
   position: relative;
   cursor: pointer;
-  box-sizing: border-box;
+  transition: all 0.2s ease;
 }
 
 @media screen and (max-width: 480px) {
   .custom-variant-selector__block {
-    flex: 1 1 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
 }
@@ -54,6 +55,7 @@
 
 .variant-card img {
   max-width: 100%;
+  height: auto;
   margin-top: 20px;
 }
 
