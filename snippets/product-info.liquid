@@ -45,6 +45,8 @@
               {%- render 'product-rating', product: product, show_empty: next_block.settings.show_empty, block: next_block -%}
             {%- endif -%}
           </div>
+          {% render 'custom-variant-selector', product: product %}
+
 
           {%- if block.settings.show_taxes_notice -%}
             <p class="text-sm text-subdued">
