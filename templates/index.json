@@ -139,10 +139,11 @@
     "image_with_text_overlay_PrHEgD": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_VEFEEh": {
-          "type": "subheading",
+        "heading_XJNdJD": {
+          "type": "heading",
           "settings": {
-            "text": "DÉCOUVREZ L'EXPÉRIENCE DE PARFUM VAILLANT"
+            "text": "DÉCOUVREZ L'EXPÉRIENCE DE PARFUM VAILLANT",
+            "heading_tag": "h3"
           }
         },
         "richtext_cx7nTk": {
@@ -153,7 +154,7 @@
         }
       },
       "block_order": [
-        "subheading_VEFEEh",
+        "heading_XJNdJD",
         "richtext_cx7nTk"
       ],
       "name": "Image with text overlay",
