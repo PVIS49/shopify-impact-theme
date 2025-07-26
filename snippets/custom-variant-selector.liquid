@@ -13,12 +13,12 @@
   <img
     src="{{ variant.metafields.custom.custom_image | image_url: width: 300 }}"
     alt="{{ variant.title }}"
-    class="{% if forloop.index == 1 %}img-small{% else %}img-large{% endif %}">
+    class="{% if forloop.index <= 1 %}img-small{% else %}img-large{% endif %}">
 {% elsif variant.featured_media %}
   <img
     src="{{ variant.featured_media.preview_image | image_url: width: 300 }}"
     alt="{{ variant.title }}"
-    class="{% if forloop.index == 1 %}img-small{% else %}img-large{% endif %}">
+    class="{% if forloop.index <= 1 %}img-small{% else %}img-large{% endif %}">
 {% endif %}
 
 
