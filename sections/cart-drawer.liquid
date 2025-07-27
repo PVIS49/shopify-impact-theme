@@ -100,41 +100,47 @@
           </div>
         {% endfor %}
 
-        <div class="cart-drawer__review-carousel" style="margin-top: 8px;">
-  <div class="review-slider-wrapper" style="overflow: hidden; border-radius: 12px; background: #f0f3fa;">
-    <div class="review-slider-track" style="display: flex; transition: transform 0.5s ease;">
-      <div class="review-slide" style="min-width: 100%; padding: 16px;">
-        <p style="margin: 0 0 4px; font-weight: bold;">
-          <span style="color: #0d0c22;">★★★★★</span> Merci
-        </p>
-        <p style="margin: 0;">« J'ai repris confiance en moi »</p>
-      </div>
-      <div class="review-slide" style="min-width: 100%; padding: 16px;">
-        <p style="margin: 0 0 4px; font-weight: bold;">
-          <span style="color: #0d0c22;">★★★★★</span> Incroyable
-        </p>
-        <p style="margin: 0;">« Je ne m'en passe plus »</p>
-      </div>
-      <div class="review-slide" style="min-width: 100%; padding: 16px;">
-        <p style="margin: 0 0 4px; font-weight: bold;">
-          <span style="color: #0d0c22;">★★★★★</span> Excellent
-        </p>
-        <p style="margin: 0;">« Je n’ai jamais eu autant de succès avec les filles ! »</p>
-      </div>
-      <div class="review-slide" style="min-width: 100%; padding: 16px;">
-        <p style="margin: 0 0 4px; font-weight: bold;">
-          <span style="color: #0d0c22;">★★★★★</span> Ma copine adore
-        </p>
-        <p style="margin: 0;">« Maintenant elle ne veut plus que je porte un autre parfum »</p>
-      </div>
-      <div class="review-slide" style="min-width: 100%; padding: 16px;">
-        <p style="margin: 0 0 4px; font-weight: bold;">
-          <span style="color: #0d0c22;">★★★★★</span> Top
-        </p>
-        <p style="margin: 0;">« Livraison rapide et super emballage »</p>
-      </div>
+        <div class="cart-drawer__review-carousel" style="margin: 0 auto 16px; max-width: 90%;">
+  <div class="review-slider" style="position: relative; background: #f0f3fa; padding: 16px; border-radius: 12px;">
+    <div class="review-slide" style="text-align: left; transition: transform 0.5s ease;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Merci
+      </p>
+      <p style="margin: 0;">« J'ai repris confiance en moi »</p>
+    </div>
+    <div class="review-slide" style="display: none; text-align: left; transition: transform 0.5s ease;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Incroyable
+      </p>
+      <p style="margin: 0;">« Je ne m'en passe plus »</p>
+    </div>
+    <div class="review-slide" style="display: none; text-align: left; transition: transform 0.5s ease;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Excellent
+      </p>
+      <p style="margin: 0;">« Je n’ai jamais eu autant de succès avec les filles ! »</p>
+    </div>
+    <div class="review-slide" style="display: none; text-align: left; transition: transform 0.5s ease;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Ma copine adore
+      </p>
+      <p style="margin: 0;">« Maintenant elle ne veut plus que je porte un autre parfum »</p>
+    </div>
+    <div class="review-slide" style="display: none; text-align: left; transition: transform 0.5s ease;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Top
+      </p>
+      <p style="margin: 0;">« Livraison rapide et super emballage »</p>
+    </div>
+
+    <div class="review-dots" style="position: absolute; top: 12px; right: 16px; display: flex; gap: 6px;">
+      {% for i in (0..4) %}
+        <span class="dot" data-index="{{ i }}" style="width: 8px; height: 8px; border-radius: 50%; background: {% if i == 0 %}#3a4d5c{% else %}#ccc{% endif %}; cursor: pointer;"></span>
+      {% endfor %}
     </div>
   </div>
+</div>
+
 
   <div class="review-dots" style="margin-top: 8px; display: flex; justify-content: flex-end; gap: 6px; padding-right: 12px;">
     {% for i in (0..4) %}
