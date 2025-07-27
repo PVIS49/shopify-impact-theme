@@ -206,6 +206,34 @@
       </form>
     </div>
   {%- endif -%}
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.review-slide');
+    const dots = document.querySelectorAll('.dot');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+        dots[i].style.background = i === index ? '#3a4d5c' : '#ccc';
+      });
+      current = index;
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        showSlide(Number(dot.dataset.index));
+      });
+    });
+
+    // Optionnel : autoplay
+    setInterval(() => {
+      const next = (current + 1) % slides.length;
+      showSlide(next);
+    }, 5000);
+  });
+</script>
+
 </cart-drawer>
 
 {% schema %}
