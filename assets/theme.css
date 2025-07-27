@@ -9928,3 +9928,19 @@ split-lines {
   z-index: 9999 !important;
   position: fixed !important; /* ou relative si elle est dans le flux */
 }
+.review-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.review-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.review-item {
+  min-width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
