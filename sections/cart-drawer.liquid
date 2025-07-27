@@ -88,6 +88,48 @@
       </div>
     </div>
 
+    <div class="cart-drawer__review-carousel" style="margin-bottom: 16px;">
+  <div class="review-slider" style="position: relative; background: #f0f3fa; padding: 16px; border-radius: 12px;">
+    <div class="review-slide" style="text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Merci
+      </p>
+      <p style="margin: 0;">« J'ai repris confiance en moi »</p>
+    </div>
+    <div class="review-slide" style="display: none; text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Incroyable
+      </p>
+      <p style="margin: 0;">« Je ne m'en passe plus »</p>
+    </div>
+    <div class="review-slide" style="display: none; text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Excellent
+      </p>
+      <p style="margin: 0;">« Je n’ai jamais eu autant de succès avec les filles ! »</p>
+    </div>
+    <div class="review-slide" style="display: none; text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Ma copine adore
+      </p>
+      <p style="margin: 0;">« Maintenant elle ne veut plus que je porte un autre parfum »</p>
+    </div>
+    <div class="review-slide" style="display: none; text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Top
+      </p>
+      <p style="margin: 0;">« Livraison rapide et super emballage »</p>
+    </div>
+
+    <div class="review-dots" style="position: absolute; top: 12px; right: 16px; display: flex; gap: 6px;">
+      {% for i in (0..4) %}
+        <span class="dot" data-index="{{ i }}" style="width: 8px; height: 8px; border-radius: 50%; background: {% if i == 0 %}#3a4d5c{% else %}#ccc{% endif %}; cursor: pointer;"></span>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+    
     <div class="v-stack gap-4 sm:gap-6" slot="footer">
       <div class="v-stack gap-1">
         {% for discount_application in cart.cart_level_discount_applications %}
