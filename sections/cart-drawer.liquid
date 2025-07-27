@@ -36,7 +36,11 @@
           {%- render 'free-shipping-bar' -%}
         {%- endif -%}
       </div>
+<div id="cart-reservation-timer" style="background-color: #f4f4f4; border-radius: 8px; padding: 12px; text-align: center; font-weight: 500; margin-bottom: 16px;">
+  Nous réservons votre panier pendant <strong><span id="countdown">05:00</span></strong> minutes !
+</div>
 
+    
       <div class="v-stack gap-6 sm:gap-8">
         <div class="cart-drawer__line-items">
           {%- for line_item in cart.items -%}
