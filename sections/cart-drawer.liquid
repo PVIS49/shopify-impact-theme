@@ -100,39 +100,44 @@
           </div>
         {% endfor %}
 
-
-
-
-
-
-
-<div id="review-carousel-wrapper" style="background-color:#f4f6fd; border-radius:12px; overflow:hidden; padding:16px; margin-bottom:12px;">
-  <div class="review-carousel-track" style="display:flex; transition: transform 0.4s ease; will-change: transform;">
-    <div class="review-slide" style="min-width:100%;">
-      <p style="margin:0 0 4px;"><strong>★★★★★ Excellent</strong></p>
-      <p style="margin:0;">« Je n’ai jamais eu autant de succès avec les filles ! »</p>
+        <div class="cart-drawer__review-carousel" style="margin-bottom: 16px;">
+  <div class="review-slider" style="position: relative; background: #f0f3fa; padding: 16px; border-radius: 12px;">
+    <div class="review-slide" style="text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Merci
+      </p>
+      <p style="margin: 0;">« J'ai repris confiance en moi »</p>
     </div>
-    <div class="review-slide" style="min-width:100%;">
-      <p style="margin:0 0 4px;"><strong>★★★★★ Merci</strong></p>
-      <p style="margin:0;">« J'ai repris confiance en moi »</p>
+    <div class="review-slide" style="display: none; text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Incroyable
+      </p>
+      <p style="margin: 0;">« Je ne m'en passe plus »</p>
     </div>
-    <div class="review-slide" style="min-width:100%;">
-      <p style="margin:0 0 4px;"><strong>★★★★★ Ma copine adore</strong></p>
-      <p style="margin:0;">« Elle ne veut plus que je porte un autre parfum »</p>
+    <div class="review-slide" style="display: none; text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Excellent
+      </p>
+      <p style="margin: 0;">« Je n’ai jamais eu autant de succès avec les filles ! »</p>
     </div>
-    <div class="review-slide" style="min-width:100%;">
-      <p style="margin:0 0 4px;"><strong>★★★★★ Incroyable</strong></p>
-      <p style="margin:0;">« Je ne m'en passe plus »</p>
+    <div class="review-slide" style="display: none; text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Ma copine adore
+      </p>
+      <p style="margin: 0;">« Maintenant elle ne veut plus que je porte un autre parfum »</p>
     </div>
-    <div class="review-slide" style="min-width:100%;">
-      <p style="margin:0 0 4px;"><strong>★★★★★ Top</strong></p>
-      <p style="margin:0;">« Livraison rapide et super emballage »</p>
+    <div class="review-slide" style="display: none; text-align: left;">
+      <p style="margin: 0 0 4px; font-weight: bold;">
+        <span style="color: #0d0c22;">★★★★★</span> Top
+      </p>
+      <p style="margin: 0;">« Livraison rapide et super emballage »</p>
     </div>
-  </div>
-  <div class="review-carousel-dots" style="margin-top:12px; display:flex; justify-content:flex-end; gap:6px;">
-    {% for i in (0..4) %}
-      <span class="review-dot" data-index="{{ i }}" style="width:8px; height:8px; border-radius:50%; background:{% if i == 0 %}#33415c{% else %}#d0d4dc{% endif %}; cursor:pointer;"></span>
-    {% endfor %}
+
+    <div class="review-dots" style="position: absolute; top: 12px; right: 16px; display: flex; gap: 6px;">
+      {% for i in (0..4) %}
+        <span class="dot" data-index="{{ i }}" style="width: 8px; height: 8px; border-radius: 50%; background: {% if i == 0 %}#3a4d5c{% else %}#ccc{% endif %}; cursor: pointer;"></span>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
@@ -204,28 +209,28 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const track = document.querySelector('.review-carousel-track');
-    const dots = document.querySelectorAll('.review-dot');
+    const slides = document.querySelectorAll('.review-slide');
+    const dots = document.querySelectorAll('.dot');
     let current = 0;
 
-    function goToSlide(index) {
-      if (!track) return;
-      track.style.transform = `translateX(-${index * 100}%)`;
-      dots.forEach((dot, i) => {
-        dot.style.background = i === index ? '#33415c' : '#d0d4dc';
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+        dots[i].style.background = i === index ? '#3a4d5c' : '#ccc';
       });
       current = index;
     }
 
     dots.forEach(dot => {
       dot.addEventListener('click', () => {
-        goToSlide(Number(dot.dataset.index));
+        showSlide(Number(dot.dataset.index));
       });
     });
 
+    // Optionnel : autoplay
     setInterval(() => {
-      let next = (current + 1) % dots.length;
-      goToSlide(next);
+      const next = (current + 1) % slides.length;
+      showSlide(next);
     }, 5000);
   });
 </script>
