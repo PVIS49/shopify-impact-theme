@@ -51,6 +51,27 @@
     
     {%- comment %}
     Sélecteur visuel de variantes perso
+    {%- for block in section.blocks -%}
+  {%- if block.type == 'custom_icons' -%}
+    <div class="custom-icons-block">
+      <div class="icons-wrapper">
+        {% for i in (1..3) %}
+          <div class="icon-item">
+            {% assign img = block.settings["image_" | append: i] %}
+            {% assign txt = block.settings["text_" | append: i] %}
+            {% if img != blank %}
+              <img src="{{ img | image_url: width: 100 }}" alt="Icon {{ i }}">
+            {% endif %}
+            {% if txt != blank %}
+              <p>{{ txt }}</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
+
   {%- endcomment %}
   </div>
 </div>
