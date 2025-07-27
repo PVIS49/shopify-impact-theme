@@ -210,31 +210,32 @@
   {%- endif -%}
   <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const slides = document.querySelectorAll('.review-slide');
+    const sliderTrack = document.querySelector('.review-slider-track');
     const dots = document.querySelectorAll('.dot');
-    let current = 0;
+    const totalSlides = dots.length;
+    let currentIndex = 0;
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.style.display = i === index ? 'block' : 'none';
-        dots[i].style.background = i === index ? '#3a4d5c' : '#ccc';
+    function updateSlide(index) {
+      sliderTrack.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.style.background = i === index ? '#3a4d5c' : '#ccc';
       });
-      current = index;
+      currentIndex = index;
     }
 
     dots.forEach(dot => {
       dot.addEventListener('click', () => {
-        showSlide(Number(dot.dataset.index));
+        updateSlide(Number(dot.dataset.index));
       });
     });
 
-    // Optionnel : autoplay
     setInterval(() => {
-      const next = (current + 1) % slides.length;
-      showSlide(next);
+      const nextIndex = (currentIndex + 1) % totalSlides;
+      updateSlide(nextIndex);
     }, 5000);
   });
 </script>
+
 
 </cart-drawer>
 
