@@ -9944,29 +9944,3 @@ split-lines {
   padding: 16px;
   box-sizing: border-box;
 }
-.custom-icons-block {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.icons-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-.icon-item {
-  flex: 1 1 30%;
-  text-align: center;
-}
-.icon-item img {
-  max-width: 60px;
-  height: auto;
-  margin-bottom: 8px;
-}
-@media (min-width: 768px) {
-  .icons-wrapper {
-    flex-wrap: nowrap;
-  }
-  .icon-item {
-    text-align: left;
-  }
-}
