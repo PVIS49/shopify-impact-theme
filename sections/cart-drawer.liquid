@@ -106,6 +106,35 @@
 
 
 
+<div id="review-carousel-wrapper" style="background-color:#f4f6fd; border-radius:12px; overflow:hidden; padding:16px; margin-bottom:12px;">
+  <div class="review-carousel-track" style="display:flex; transition: transform 0.4s ease; will-change: transform;">
+    <div class="review-slide" style="min-width:100%;">
+      <p style="margin:0 0 4px;"><strong>★★★★★ Excellent</strong></p>
+      <p style="margin:0;">« Je n’ai jamais eu autant de succès avec les filles ! »</p>
+    </div>
+    <div class="review-slide" style="min-width:100%;">
+      <p style="margin:0 0 4px;"><strong>★★★★★ Merci</strong></p>
+      <p style="margin:0;">« J'ai repris confiance en moi »</p>
+    </div>
+    <div class="review-slide" style="min-width:100%;">
+      <p style="margin:0 0 4px;"><strong>★★★★★ Ma copine adore</strong></p>
+      <p style="margin:0;">« Elle ne veut plus que je porte un autre parfum »</p>
+    </div>
+    <div class="review-slide" style="min-width:100%;">
+      <p style="margin:0 0 4px;"><strong>★★★★★ Incroyable</strong></p>
+      <p style="margin:0;">« Je ne m'en passe plus »</p>
+    </div>
+    <div class="review-slide" style="min-width:100%;">
+      <p style="margin:0 0 4px;"><strong>★★★★★ Top</strong></p>
+      <p style="margin:0;">« Livraison rapide et super emballage »</p>
+    </div>
+  </div>
+  <div class="review-carousel-dots" style="margin-top:12px; display:flex; justify-content:flex-end; gap:6px;">
+    {% for i in (0..4) %}
+      <span class="review-dot" data-index="{{ i }}" style="width:8px; height:8px; border-radius:50%; background:{% if i == 0 %}#33415c{% else %}#d0d4dc{% endif %}; cursor:pointer;"></span>
+    {% endfor %}
+  </div>
+</div>
 
       
         <div class="h-stack gap-4 justify-between">
@@ -173,6 +202,35 @@
     </div>
   {%- endif -%}
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const track = document.querySelector('.review-carousel-track');
+    const dots = document.querySelectorAll('.review-dot');
+    let current = 0;
+
+    function goToSlide(index) {
+      if (!track) return;
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.style.background = i === index ? '#33415c' : '#d0d4dc';
+      });
+      current = index;
+    }
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        goToSlide(Number(dot.dataset.index));
+      });
+    });
+
+    setInterval(() => {
+      let next = (current + 1) % dots.length;
+      goToSlide(next);
+    }, 5000);
+  });
+</script>
+
+  
 </cart-drawer>
 
 {% schema %}
