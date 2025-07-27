@@ -232,3 +232,26 @@
   ]
 }
 {% endschema %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const countdownElement = document.getElementById('countdown');
+    if (!countdownElement) return;
+
+    function startCountdown(durationSeconds) {
+      let timer = durationSeconds;
+
+      function updateTimer() {
+        const minutes = String(Math.floor(timer / 60)).padStart(2, '0');
+        const seconds = String(timer % 60).padStart(2, '0');
+        countdownElement.textContent = `${minutes}:${seconds}`;
+        timer--;
+        if (timer < 0) timer = durationSeconds;
+      }
+
+      updateTimer();
+      setInterval(updateTimer, 1000);
+    }
+
+    startCountdown(300); // 5 minutes
+  });
+</script>
