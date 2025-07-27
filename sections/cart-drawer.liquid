@@ -217,31 +217,32 @@
   {%- endif -%}
   <script>
   document.addEventListener('DOMContentLoaded', function () {
-    const track = document.querySelector('.review-carousel-track');
-    const dots = document.querySelectorAll('.review-dot');
+    const slides = document.querySelectorAll('.review-slide');
+    const dots = document.querySelectorAll('.dot');
     let current = 0;
 
-    function goToSlide(index) {
-      if (!track) return;
-      track.style.transform = `translateX(-${index * 100}%)`;
-      dots.forEach((dot, i) => {
-        dot.style.background = i === index ? '#33415c' : '#d0d4dc';
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+        dots[i].style.background = i === index ? '#3a4d5c' : '#ccc';
       });
       current = index;
     }
 
     dots.forEach(dot => {
       dot.addEventListener('click', () => {
-        goToSlide(Number(dot.dataset.index));
+        showSlide(Number(dot.dataset.index));
       });
     });
 
+    // Optionnel : autoplay
     setInterval(() => {
-      let next = (current + 1) % dots.length;
-      goToSlide(next);
+      const next = (current + 1) % slides.length;
+      showSlide(next);
     }, 5000);
   });
 </script>
+
 
 
 
