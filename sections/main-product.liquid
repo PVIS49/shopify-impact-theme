@@ -40,6 +40,12 @@
   
 </style>
 
+<div {% render 'section-properties', tight: true %}>
+  <div class="product">
+    {%- if product.media.size > 0 -%}
+      {%- render 'product-gallery', product: product -%}
+    {%- endif -%}
+
     {%- render 'product-info', product: product, update_url: true -%}
     
     
@@ -257,7 +263,6 @@ quick buy information in a template, that will be extracted in JS, but ensure it
         }
       ]
     },
-    
     {
       "type": "variant_picker",
       "name": "Variant picker",
