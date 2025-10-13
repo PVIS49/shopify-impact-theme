@@ -315,30 +315,6 @@
     "meditrust_comparaison_EQg9mb": {
       "type": "meditrust-comparaison",
       "blocks": {
-        "list_item_QHmU44": {
-          "type": "list_item",
-          "settings": {
-            "text": "Endormez-vous plus rapidement"
-          }
-        },
-        "list_item_rCBwVF": {
-          "type": "list_item",
-          "settings": {
-            "text": "Relaxation & Sommeil réparateur"
-          }
-        },
-        "list_item_D7A36e": {
-          "type": "list_item",
-          "settings": {
-            "text": "Réveillez-vous reposé"
-          }
-        },
-        "list_item_bPpeyG": {
-          "type": "list_item",
-          "settings": {
-            "text": "À base de plantes"
-          }
-        },
         "table_row_iKzGdy": {
           "type": "table_row",
           "settings": {
@@ -411,10 +387,6 @@
         }
       },
       "block_order": [
-        "list_item_QHmU44",
-        "list_item_rCBwVF",
-        "list_item_D7A36e",
-        "list_item_bPpeyG",
         "table_row_iKzGdy",
         "table_row_Ekq4gF",
         "table_row_jBrgHE",
@@ -552,7 +524,12 @@
       "blocks": {
         "judge_me_reviews_review_widget_ACQHGV": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
